@@ -1,3 +1,6 @@
+DROP TABLE if exists dog_owners;
+DROP TABLE if exists lost_dog_collars;
+
 CREATE TABLE dog_owners (
   id serial,
   name varchar(255) NOT NULL,
@@ -41,7 +44,7 @@ INSERT INTO dog_owners (name, dog_name)
 
 INSERT INTO lost_dog_collars (dog_name)
   VALUES (
-    'Bogie'
+    'Boogie'
   );
 
 INSERT INTO lost_dog_collars (dog_name)
